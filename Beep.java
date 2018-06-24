@@ -9,6 +9,8 @@ import javax.swing.Timer;
 public class Beep {
     public static void main(String[] args)
     {
-    
+        ActionListener listener = new ActionListener() {
+            
+        }
     }
 }
