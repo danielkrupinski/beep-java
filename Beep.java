@@ -10,7 +10,11 @@ public class Beep {
     public static void main(String[] args)
     {
         ActionListener listener = new ActionListener() {
-            
-        }
+            public void actionPerformed(ActionEvent event)
+            {
+                System.out.println("Next beep at " + new Date());
+                Toolkit.getDefaultToolkit().beep();
+            }
+        };
     }
 }
