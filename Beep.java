@@ -24,3 +24,7 @@ public class Beep {
         System.exit(0);
     }
 }
+
+class Clock {
+    
+}
