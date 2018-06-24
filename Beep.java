@@ -16,5 +16,9 @@ public class Beep {
                 Toolkit.getDefaultToolkit().beep();
             }
         };
+
+        Timer timer = new Time(10000, listener);
+        t.start();
+
     }
 }
