@@ -12,7 +12,7 @@ public class Beep {
         ActionListener listener = new ActionListener() {
             public void actionPerformed(ActionEvent event)
             {
-                System.out.println("Next beep at " + new Date());
+                System.out.println("Last beep at " + new Date());
                 Toolkit.getDefaultToolkit().beep();
             }
         };
@@ -26,5 +26,5 @@ public class Beep {
 }
 
 class Clock {
-    
+
 }
