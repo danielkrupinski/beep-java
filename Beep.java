@@ -20,5 +20,7 @@ public class Beep {
         Timer timer = new Time(10000, listener);
         t.start();
 
+        JOptionPane.showMessageDialog(null, "Exit?");
+        System.exit(0);
     }
 }
