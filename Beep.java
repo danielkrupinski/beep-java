@@ -27,5 +27,8 @@ class Clock {
                 if (beep) Toolkit.getDefaultToolkit().beep();
             }
         };
+
+        Timer timer = new Timer(interval, listener);
+        timer.start();
     }
 }
