@@ -9,8 +9,8 @@ import javax.swing.Timer;
 public class Beep {
     public static void main(String[] args)
     {
-        Timer timer = new Timer(10000, listener);
-        timer.start();
+        Clock clock = new Clock();
+        clock.start(10000, true);
 
         JOptionPane.showMessageDialog(null, "Exit?");
         System.exit(0);
