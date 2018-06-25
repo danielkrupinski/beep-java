@@ -9,14 +9,6 @@ import javax.swing.Timer;
 public class Beep {
     public static void main(String[] args)
     {
-        ActionListener listener = new ActionListener() {
-            public void actionPerformed(ActionEvent event)
-            {
-                System.out.println("Last beep at " + new Date());
-                Toolkit.getDefaultToolkit().beep();
-            }
-        };
-
         Timer timer = new Timer(10000, listener);
         timer.start();
 
@@ -28,6 +20,12 @@ public class Beep {
 class Clock {
     public void start(int interval, final boolean beep)
     {
-        
+        ActionListener listener = new ActionListener() {
+            public void actionPerformed(ActionEvent event)
+            {
+                System.out.println("Last beep at " + new Date());
+                if (beep) Toolkit.getDefaultToolkit().beep();
+            }
+        };
     }
 }
