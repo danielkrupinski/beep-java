@@ -26,5 +26,8 @@ public class Beep {
 }
 
 class Clock {
-
+    public void start(int interval, final boolean beep)
+    {
+        
+    }
 }
